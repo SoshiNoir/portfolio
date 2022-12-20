@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
 import './App.css'
+import { Banner } from './components/Banner'
 import { NavBar } from './components/NavBar'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <h1>Hello World!</h1>
+      <Banner />
     </div>
   )
 }
