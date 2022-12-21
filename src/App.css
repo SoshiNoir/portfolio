@@ -1,19 +1,19 @@
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
-  src: url('./assets/font/CentraNo2-Bold.ttf');
+  src: url('./assets/fonts/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('./assets/font/CentraNo2-Medium.ttf');
+  src: url('./assets/fonts/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('./assets/font/CentraNo2-Book.ttf');
+  src: url('./assets/fonts/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
@@ -378,15 +378,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px 0 75px 0;
 }
 
+.skill-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 30px
+}
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
 
-.skill-slider .item img {
-  width: 50%;
+.item img {
+  width: 30%;
   margin: 0 auto 15px auto;
+}
+
+.item img:hover {
+  border-radius: 50%;
+  transform: scale(1.2);
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
 
 .background-image-left {
@@ -402,6 +414,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0;
   position: relative;
   background-color: black;
+  justify-content: center;
 }
 
 .project h2 {
@@ -417,7 +430,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+
+}
+
+@media (min-width: 501px) {
+  .project p {
+    width: 56%;
+
+  }
 }
 
 .project .nav.nav-pills {
@@ -592,7 +612,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0.8;
 }
 
-.contact form button {
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.contact .button {
+  display: flex;
+  align-content: center;
+  width: 150px;
+  height: 80px;
+  align-self: flex-end;
+}
+
+.send:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+
+.contact form .button {
   font-weight: 700;
   color: #000;
   background-color: #fff;
@@ -604,16 +643,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.contact form button span {
+.contact form .button span {
   z-index: 1;
   position: relative;
 }
 
-.contact form button:hover {
+.contact form .button:hover {
   color: #fff;
 }
 
-.contact form button::before {
+.contact form .button::before {
   content: "";
   background: #121212;
   width: 0;
@@ -625,7 +664,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.contact form button:hover::before {
+.contact form .button:hover::before {
   width: 100%;
 }
 

@@ -10,7 +10,6 @@ import meter3 from "../assets/img/meter3.svg";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -28,6 +27,33 @@ export const Skills = () => {
     }
   };
 
+//   <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+//   <div className="item">
+//       <img src={meter1} alt="Image" />
+//       <h5>HTML</h5>
+//   </div>
+//   <div className="item">
+//       <img src={meter1} alt="Image" />
+//       <h5>CSS</h5>
+//   </div>
+//   <div className="item">
+//       <img src={meter1} alt="Image" />
+//       <h5>React</h5>
+//   </div>
+//   <div className="item">
+//       <img src={meter2} alt="Image" />
+//       <h5>Javascript</h5>
+//   </div>
+//   <div className="item">
+//       <img src={meter3} alt="Image" />
+//       <h5>Typescript</h5>
+//   </div>
+//   <div className="item">
+//       <img src={meter1} alt="Image" />
+//       <h5>Styled Components</h5>
+//   </div>
+// </Carousel>
+
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -35,33 +61,33 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>HTML</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>CSS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>React</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Javascript</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Typescript</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Styled Components</h5>
-                            </div>
-                        </Carousel>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at officia veniam provident, reprehenderit quaerat fugiat, blanditiis magni obcaecati eius voluptatem ut dolorem molestias, repudiandae minus hic. Neque, non vel?<br></br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi accusantium inventore, molestias ut perferendis et nihil laboriosam quae minus. Minus ex nihil provident commodi culpa ipsum, velit nemo accusamus pariatur.</p>
+                        <div className='skill-items'>
+                        <div className="item">
+                                 <img src={meter1} alt="Image" />
+                                 <h5>HTML</h5>
+                             </div>
+                             <div className="item">
+                                 <img src={meter1} alt="Image" />
+                                 <h5>CSS</h5>
+                             </div>
+                             <div className="item">
+                                 <img src={meter1} alt="Image" />
+                                 <h5>React</h5>
+                             </div>
+                             <div className="item">
+                                 <img src={meter2} alt="Image" />
+                                 <h5>Javascript</h5>
+                             </div>
+                             <div className="item">
+                                 <img src={meter3} alt="Image" />
+                                 <h5>Typescript</h5>
+                             </div>
+                             <div className="item">
+                                 <img src={meter1} alt="Image" />
+                                 <h5>Styled Components</h5>
+                             </div>
+                             </div>
                     </div>
                 </div>
             </div>
