@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
@@ -48,6 +52,7 @@ export const Banner = () => {
   }
 
   return (
+    <Router>
     <section className="banner" id="home">
       <Container>
         <Row className="d-flex justify-content-*-center">
@@ -56,9 +61,11 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Bem-vindo ao meu portfólio</span>
-                <h1>{`Oi! Eu sou Miguel`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`Oi! Eu sou Miguel`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatum accusamus consequuntur ratione similique minus quam assumenda reiciendis aliquid recusandae amet porro incidunt, iste totam ea. Dolorem a facere accusamus.</p>
+                  <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Contato <ArrowRightCircle size={25} /></button>
+                  </HashLink>
               </div>}
             </TrackVisibility>
           </Col>
@@ -73,5 +80,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    </Router>
   )
 }
