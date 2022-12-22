@@ -33,9 +33,7 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-          <TrackVisibility>
-              {({ isVisible }) =>
-               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+               <div className="animate__animated animate__fadeIn">
                 <h2>Fale comigo</h2>
                 <form ref={form} onSubmit={sendEmail}>
                     <label>Nome</label>
@@ -46,8 +44,7 @@ export const Contact = () => {
                     <textarea name="message" />
                     <input className='send' type="submit" value="Enviar" />
                 </form>
-                   </div>}
-                    </TrackVisibility>
+                   </div>
           </Col>
         </Row>
       </Container>
