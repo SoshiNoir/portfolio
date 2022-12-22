@@ -353,6 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
+  width: 100vw;
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -429,6 +430,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
+  width: 100vw;
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -591,6 +593,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
+  width: 100vw;
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
 }
@@ -697,6 +700,7 @@ form {
 
 /************ Footer Css ************/
 .footer {
+  width: 100%vw;
   padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
