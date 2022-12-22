@@ -5,47 +5,53 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Twitter Clone",
+      description: "Twitter UI Clone",
       imgUrl: projImg1,
       link: 'https://twitterclone-soshinoir.vercel.app/'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Github Blog",
+      description: "Um blog que consome a API do Github para transformar Issues em post",
       imgUrl: projImg2,
-      link: 'https://twitterclone-soshinoir.vercel.app/'
+      link: 'https://github-blog-soshinoir.vercel.app/'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "To do TT",
+      description: "Aplicação simples para gerenciar tarefas",
       imgUrl: projImg3,
-      link: 'https://twitterclone-soshinoir.vercel.app/'
+      link: 'https://todott-soshinoir.vercel.app/'
+    }
+  ];
+
+  const projects2 = [
+    {
+      title: "Ignite Timer - Não responsivo",
+      description: "Aplicação simples de timer",
+      imgUrl: projImg4,
+      link: 'https://ignitetimer-soshinoir.vercel.app/'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      link: 'https://twitterclone-soshinoir.vercel.app/'
+      title: "Ignite Feed",
+      description: "Aplicação que simula uma rede social com funções de comentar, apagar e ''aplaudir'' ",
+      imgUrl: projImg5,
+      link: 'https://ignite-feed-soshinoir.vercel.app/'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      link: 'https://twitterclone-soshinoir.vercel.app/'
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      link: 'https://twitterclone-soshinoir.vercel.app/'
-    },
+      title: "Coffee Delivery - Não responsivo",
+      description: "Aplicação que simula um delivery de café com carrinho de compras",
+      imgUrl: projImg6,
+      link: 'https://coffee-delivery-soshinoir.vercel.app/'
+    }
   ];
 
   return (
@@ -56,7 +62,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
+                <h2>Projetos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquid maxime ex aut eius porro laboriosam natus officia obcaecati ad officiis dolorum vitae pariatur ducimus nam, tempore minima ut amet.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -86,7 +92,18 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Teste</p>
+                    <Row>
+                        {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>aaaLorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>

@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 
 export const NavBar = () => {
