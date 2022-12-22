@@ -487,6 +487,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
 }
 
+@media (max-width: 435px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 10px;
+  }
+}
+
 .project .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
@@ -701,7 +713,7 @@ form {
 /************ Footer Css ************/
 .footer {
   width: 100%vw;
-  padding: 0 0 50px 0;
+  padding: 18px 0 30px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
