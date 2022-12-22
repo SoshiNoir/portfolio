@@ -57,25 +57,19 @@ export const Banner = () => {
       <Container>
         <Row className="d-flex justify-content-*-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              <div className="animate__animated animate__fadeIn">
                 <span className="tagline">Bem-vindo ao meu portfólio</span>
                 <h1>{`Oi! Eu sou Miguel`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatum accusamus consequuntur ratione similique minus quam assumenda reiciendis aliquid recusandae amet porro incidunt, iste totam ea. Dolorem a facere accusamus.</p>
                   <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Contato <ArrowRightCircle size={25} /></button>
                   </HashLink>
-              </div>}
-            </TrackVisibility>
+              </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className="animate__animated animate__zoomIn">
                   <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
+                </div>
           </Col>
         </Row>
       </Container>
