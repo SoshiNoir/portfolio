@@ -380,15 +380,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-items {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 30px
 }
 
-.skill-slider {
+.skill-items h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-items .last {
+  font-size: 14px;
+}
+
+@media (max-width: 416px) {
+  .skill-items {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+}
+
+
+
+/* .skill-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
-}
+} */
 
 .item img {
   width: 30%;
