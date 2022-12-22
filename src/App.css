@@ -399,6 +399,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     grid-template-columns: 1fr 1fr;
     row-gap: 0;
   }
+
+  .skill-bx {
+    padding: 10px 25px;
+  }
 }
 
 
