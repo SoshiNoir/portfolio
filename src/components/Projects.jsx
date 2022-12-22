@@ -14,31 +14,37 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      link: 'https://twitterclone-soshinoir.vercel.app/'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: 'https://twitterclone-soshinoir.vercel.app/'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: 'https://twitterclone-soshinoir.vercel.app/'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      link: 'https://twitterclone-soshinoir.vercel.app/'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: 'https://twitterclone-soshinoir.vercel.app/'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: 'https://twitterclone-soshinoir.vercel.app/'
     },
   ];
 

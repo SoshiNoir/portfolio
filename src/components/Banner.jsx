@@ -7,7 +7,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/header-img.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
