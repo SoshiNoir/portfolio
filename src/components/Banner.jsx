@@ -59,7 +59,7 @@ export const Banner = () => {
               <div className="animate__animated animate__fadeIn">
                 <span className="tagline">Bem-vindo ao meu portfólio</span>
                 <h1>{`Oi! Eu sou Miguel,`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Sou apaixonado por tecnologia e animais, diariamente desenvolvo e aprimoro projetos e busco me inserir no mercado de trabalho como Desenvolvedor Júnior</p>
+                  <p>Sou apaixonado por tecnologia e animais, diariamente desenvolvo e aprimoro projetos enquanto busco me inserir no mercado de trabalho como Desenvolvedor Júnior</p>
                   <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Contato <ArrowRightCircle size={25} /></button>
                   </HashLink>
