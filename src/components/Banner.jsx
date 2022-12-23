@@ -2,7 +2,6 @@ import 'animate.css';
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import TrackVisibility from 'react-on-screen';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -59,8 +58,8 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
               <div className="animate__animated animate__fadeIn">
                 <span className="tagline">Bem-vindo ao meu portfólio</span>
-                <h1>{`Oi! Eu sou Miguel`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatum accusamus consequuntur ratione similique minus quam assumenda reiciendis aliquid recusandae amet porro incidunt, iste totam ea. Dolorem a facere accusamus.</p>
+                <h1>{`Oi! Eu sou Miguel,`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Developer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Sou apaixonado por tecnologia e animais, diariamente desenvolvo e aprimoro projetos e busco me inserir no mercado de trabalho como Desenvolvedor Júnior</p>
                   <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Contato <ArrowRightCircle size={25} /></button>
                   </HashLink>

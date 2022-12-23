@@ -6,6 +6,7 @@ import {
 import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 
 export const NavBar = () => {
 
@@ -49,6 +50,7 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/miguel-matias-soshi/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/SoshiNoir" target="_blank"><img src={navIcon4} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Contato</span></button>

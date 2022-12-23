@@ -61,7 +61,6 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at officia veniam provident, reprehenderit quaerat fugiat, blanditiis magni obcaecati eius voluptatem ut dolorem molestias, repudiandae minus hic. Neque, non vel?<br></br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi accusantium inventore, molestias ut perferendis et nihil laboriosam quae minus. Minus ex nihil provident commodi culpa ipsum, velit nemo accusamus pariatur.</p>
                         <div className='skill-items'>
                         <div className="item">
                                  <img src={meter1} alt="Image" />
